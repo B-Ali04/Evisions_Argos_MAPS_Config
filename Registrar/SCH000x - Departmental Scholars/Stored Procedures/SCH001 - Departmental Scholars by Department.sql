@@ -1,0 +1,7 @@
+SGBSTDN_DEPT_CODE = :select_dept_code.stvdept_code
+
+ORDER BY
+    DEPARTMENT,
+    STST,
+    SPRIDEN_SEARCH_LAST_NAME,
+    SPRIDEN_SEARCH_FIRST_NAME
