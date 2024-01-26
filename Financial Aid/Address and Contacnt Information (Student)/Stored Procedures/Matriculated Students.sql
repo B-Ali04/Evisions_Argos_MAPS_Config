@@ -1,0 +1,1 @@
+SGBSTDN_STYP_CODE <> 'X'

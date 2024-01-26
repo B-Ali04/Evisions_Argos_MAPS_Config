@@ -1,0 +1,1 @@
+SGBSTDN_DEGC_CODE_1 <> 'AAS'

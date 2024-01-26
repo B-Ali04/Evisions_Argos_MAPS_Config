@@ -1,0 +1,1 @@
+SPRADDR_ATYP_CODE = 'PR'
