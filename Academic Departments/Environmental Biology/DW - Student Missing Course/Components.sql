@@ -1,0 +1,37 @@
+-- Term Selection
+select
+(select to_char(SYSDATE, 'HH12:MI:SS') from dual) as CURRENT_TIME,
+(select to_char(SYSDATE, 'DD Month YYYY') from dual) as CURRENT_DATE,
+STVTERM.STVTERM_CODE,
+STVTERM.STVTERM_DESC,
+STVTERM.STVTERM_ACYR_CODE,
+(STVTERM.STVTERM_CODE || ' - ' ||
+       STVTERM.STVTERM_DESC) as TermDesc
+from SATURN.STVTERM STVTERM
+where stvterm_start_date < sysdate + 1865
+and stvterm_start_date >= sysdate -9999
+and STVTERM.STVTERM_CODE not in (000000, 190001)
+order by STVTERM.STVTERM_CODE desc
+
+-- course id
+SELECT
+    SSBSECT_SICAS_CAMP_COURSE_ID as CRSE_ID,
+    SSBSECT_SUBJ_CODE as SUBJ_CODE,
+    SSBSECT_CRSE_NUMB as CRSE_NUMB
+
+FROM
+    SSBSECT SSBSECT
+
+WHERE
+    SSBSECT_SURROGATE_ID = (SELECT MIN(SSBSECT_SURROGATE_ID)
+                               FROM    SSBSECT SECT
+                               WHERE   SECT.SSBSECT_SICAS_CAMP_COURSE_ID = SSBSECT.SSBSECT_SICAS_CAMP_COURSE_ID)
+/*
+    AND SSBSECT_SURROGATE_ID = (SELECT MIN(SSBSECT_SURROGATE_ID)
+                               FROM    SSBSECT SECT
+                               WHERE   SECT.SSBSECT_TERM_CODE = SSBSECT.SSBSECT_TERM_CODE
+                               AND     SECT.SSBSECT_SICAS_CAMP_COURSE_ID = SSBSECT.SSBSECT_SICAS_CAMP_COURSE_ID)
+*/
+ORDER BY
+      SSBSECT_SUBJ_CODE,
+      SSBSECT_CRSE_NUMB
