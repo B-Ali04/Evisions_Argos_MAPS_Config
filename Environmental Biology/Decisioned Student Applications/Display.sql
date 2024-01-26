@@ -1898,7 +1898,7 @@ WHERE
 
     AND SARADAP_TERM_CODE_ENTRY = :select_term_code.STVTERM_CODE
     AND SARAPPD_APDC_CODE = :select_apdc_code.SAAADMS_APDC_CODE
-    AND SARADAP_DEPT_CODE = 'LA'
+    AND SARADAP_DEPT_CODE = 'EFB'
 
 --$addfilter
 
