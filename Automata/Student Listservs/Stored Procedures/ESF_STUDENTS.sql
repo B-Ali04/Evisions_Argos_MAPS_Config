@@ -1,0 +1,1 @@
+CAT = 'GR' or CAT = 'EMP'

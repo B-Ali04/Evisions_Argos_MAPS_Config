@@ -1,0 +1,1 @@
+SFRSTCR_TERM_CODE = :parm_term_code_select.STVTERM_CODE

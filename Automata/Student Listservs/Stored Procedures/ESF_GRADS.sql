@@ -1,0 +1,1 @@
+main_pop.levl IN ('GR','EMP')
