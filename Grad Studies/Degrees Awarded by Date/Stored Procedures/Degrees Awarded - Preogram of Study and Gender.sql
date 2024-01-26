@@ -1,0 +1,10 @@
+-- CROSSTAB
+
+/*
+exists (SELECT *
+       FROM SFRSTCR x
+       WHERE x.SFRSTCR_PIDM = SPRIDEN_PIDM
+       AND x.SFRSTCR_TERM_CODE = STVTERM_CODE
+       AND x.SFRSTCR_RSTS_CODE IN ('RE', 'RW'))
+
+*/
