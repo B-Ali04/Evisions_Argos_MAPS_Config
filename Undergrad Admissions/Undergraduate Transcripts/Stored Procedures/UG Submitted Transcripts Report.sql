@@ -1,0 +1,2 @@
+SGBSTDN_STYP_CODE = :select_styp_code.STVSTYP_CODE
+and SORPCOL_ADMR_CODE = :select_admr_code.SORPCOL_ADMR_CODE
