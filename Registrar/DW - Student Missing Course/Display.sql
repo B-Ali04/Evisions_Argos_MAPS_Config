@@ -1625,7 +1625,7 @@ STUDENT_GRADE_LIST as
 
 SELECT
 -- Reporting Use Only
-    SPRIDEN_PIDM as Remove_Label_From_Dashboard,
+--  SPRIDEN_PIDM as Remove_Label_From_Dashboard,
     STVTERM.STVTERM_DESC as TERM_DESC,
 
 -- Systems Info/PII
@@ -1812,7 +1812,8 @@ SELECT
     SCBCRSE_REPS_DESC as Course_REPS_Desc,
 
 -- Sorting
-    STVCLAS_SURROGATE_ID*/
+    STVCLAS_SURROGATE_ID
+*/
 
 FROM
     STUDENT_GRADE_LIST B
