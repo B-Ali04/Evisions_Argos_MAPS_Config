@@ -1,9 +1,0 @@
-NOT EXISTS(SELECT *
-          FROM SGRSATT
-          WHERE SGRSATT_PIDM = SPRIDEN_PIDM
-          AND SGRSATT_TERM_CODE_EFF <= :select_term_code.STVTERM_CODE
-          AND SGRSATT_ATTS_CODE IN ('HONR', 'LHON', 'UHON')
-          AND SGRSATT_END_TERM_ETHOS = 999999)
-
-AND SGBSTDN_CLAS_CODE = 'SO'
-AND f_registered_this_term(SPRIDEN_PIDM, :select_term_code.STVTERM_CODE) = 'Y'
