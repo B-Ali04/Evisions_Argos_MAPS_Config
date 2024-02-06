@@ -1,0 +1,1 @@
+SSBSECT_TERM_CODE like '%%%%50'
