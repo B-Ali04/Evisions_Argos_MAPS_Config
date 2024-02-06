@@ -1051,12 +1051,3 @@ WHERE
 
 ORDER BY
     1
-/*
-
-BETTER THANTHAT, encourage our younger selves to put more of ourselves out there.
-
-fuck what th egirls think and act like and do, theyll blow up becusea they do.
-
-your health matters. you sanity is important. you are the captain of your own future.
-
-which makes no one else but you, the arbiter of your demise. */
