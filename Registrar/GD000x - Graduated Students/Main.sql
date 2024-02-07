@@ -892,6 +892,7 @@ SELECT
     GOBINTL_BIRTH_NATN as Birth_Natn,
     GORADID_ADDITIONAL_ID as SUID,
     GOBTPAC_EXTERNAL_USER as ESF_Netid,
+    GOREMAL_EMAIL_ADDRESS as Email_Address,
 
 -- Graduation Details
     SHRDGMR_DEGC_CODE as Degree_DEGC_Code,
