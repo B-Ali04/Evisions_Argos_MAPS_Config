@@ -811,7 +811,7 @@ GRADUATED_STUDENT_ADRTELE as
       SHRDGIH_SURROGATE_ID,
       SHRDGIH_VERSION,
       SHRDGDH_HOND_CODE,
-      SHRTTRM_ASTD_CODE_DL
+      SHRTTRM_ASTD_CODE_DL,
       SHRDGMR_DEGS_DESC,
       SHRDGMR_DEGC_DESC,
       SHRDGMR_LEVL_DESC,
@@ -942,7 +942,7 @@ SELECT
     SHRDGDH_HOND_DESC as Departmental_Honors_Desc,
 
 -- Student Attributes
-    SHRTTRM_ASTD_DESC_DL as Attribute_Deans_List_Code,
+    SHRTTRM_ASTD_CODE_DL as Attribute_Deans_List_Code,
     SHRTTRM_ASTD_DESC_DL as Attribute_Deans_List_Desc,
 
 -- Address and Contact
